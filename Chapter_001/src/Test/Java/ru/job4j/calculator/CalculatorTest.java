@@ -11,38 +11,61 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-
+/**
+* Calculator.
+*@param first first argument.
+*@param second second argument.
+*/
 public class CalculatorTest {
   /**
    * Test add.
+   *Values.
    */
     @Test
     public void whenAddOnePlusOneThenTwo() {
+      /**
+     * Default.
+     * @param values values.
+     */
         Calculator calc = new Calculator();
         calc.add(1D, 1D);
         double result = calc.getResult();
         double expected = 2D;
         assertThat(result, is(expected));
         }
+        /**
+        * Calculator.
+        */
     public void whenAddOneMinusOneThenZero() {
       Calculator calc = new Calculator();
-      calc.add(1D,1D);
+      calc.add(1D, 1D);
       double result = calc.getResult();
       double expected = 0D;
-      assertThat(result,is(expected));
+      assertThat(result, is(expected));
         }
+        /**
+        * Calculator.
+        */
     public void whenAddOneMultipliedByOneThenOne() {
+      /**
+     * Default.
+     * @param values values.
+     */
        Calculator calc = new Calculator();
-       calc.add(1D,1D);
-       double resul t = calc.getResult();
+       calc.add(1D, 1D);
+       double result = calc.getResult();
        double expected = 1D;
-       asserThat(result,is(expected));
+       assertThat(result, is(expected));
         }
+        /**
+        * Calculator.
+        */
     public void whenAddOneDividedByOneThenOne() {
+
            Calculator calc = new Calculator();
-           calc.add(1D,1D);
+           calc.add(1D, 1D);
            double result = calc.getResult();
            double expected = 1D;
-           asserThat(result,is(expected));
+           assertThat(result, is(expected));
        }
 }
