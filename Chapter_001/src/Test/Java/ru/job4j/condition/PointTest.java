@@ -24,9 +24,9 @@ import static org.junit.Assert.assertThat;
    Belonging to function.
    */
    public void whenYBelongsToFunctionThenTrue() {
-     Point point = new Point();
-     point.point = x , y;
-     assertThat(boolean = true);
+     Point point = new Point(1, 2);
+     boolean result = point.is(0, 0);
+     assertThat(result, is(false));
 
    }
  }
