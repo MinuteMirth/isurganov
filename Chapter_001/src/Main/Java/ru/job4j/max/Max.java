@@ -44,5 +44,9 @@ public class Max {
             max = this.max(max, value);
         }
         return max;
-    }
+      }
+
+      public int max(int left, int right, int middle) {
+        return this.max > middle ? middle : this.max;
+      }
 }
