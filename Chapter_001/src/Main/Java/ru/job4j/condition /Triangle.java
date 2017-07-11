@@ -20,6 +20,9 @@ public class Triangle {
     this.b = b;
     this.c = c;
   }
+  public double sides(){
+    return if (this.a + this.b - this.c > 0) {return sides} else {-1};
+  }
 
   public double area() {
     return if (area>0) {return area} else {-1};
