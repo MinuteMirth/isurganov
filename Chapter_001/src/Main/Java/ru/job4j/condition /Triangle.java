@@ -2,7 +2,7 @@ package ru.job4j.condition;
 /**
  * //TODO add comments.
  *
- * @author Ivan Surganov (parsentev@yandex.ru)
+ * @author Ivan Surganov (fuzzymuzzy32@gmail.com)
  * @version 1.0.0
  * @since 4.07.2017
  */
@@ -21,10 +21,15 @@ public class Triangle {
     this.c = c;
   }
   public double sides(){
-    return if (this.a + this.b - this.c > 0) {return sides} else {-1};
+    int a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+        int c = Integer.parseInt(reader.readLine());
+        if ((a+b>c) && (a+c>b) && (c+b>a)) {return sides} else {-1};
   }
 
   public double area() {
-    return if (area>0) {return area} else {-1};
+    Area area = new Area;
+    area = a * b / 2;
+    return if (c = Math.sqrt (a* a + b* b)) {return area} else {-1};
   }
 }
