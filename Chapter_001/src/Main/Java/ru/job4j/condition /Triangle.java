@@ -21,10 +21,22 @@ public class Triangle {
     this.c = c;
   }
   public double sides(){
-    int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
-        int c = Integer.parseInt(reader.readLine());
-        if ((a+b>c) && (a+c>b) && (c+b>a)) {return sides} else {-1};
+
+Point a = new Point(1, 2);
+
+Point b = new Point(2, 1);
+
+Point c = new Point(2, 0)
+
+double ab = a - b;
+double bc = b - c;
+double cb = c - b;
+double ba = b - a;
+double ac = a - c;
+double ca = c - a;
+
+
+        if ((ab + bc > ac) && (ac + ab > bc))&& (cb + ba > ac)) {return sides} else {-1};
   }
 
   public double area() {
