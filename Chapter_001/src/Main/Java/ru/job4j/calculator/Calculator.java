@@ -64,8 +64,8 @@ this.result = first - second;
 }
 /**
 * Calculator.
-*@param first-int
-*@param secod-int
+*
+*
 *@return result.
 */
 

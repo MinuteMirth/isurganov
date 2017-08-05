@@ -2,7 +2,8 @@ package ru.job4j.condition;
 
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
+
+import static org.hamcrest.number.IsCloseTo.closeTo;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -12,7 +13,7 @@ import static org.junit.Assert.assertThat;
  * @version 1.0.0
  * @since 3.07.2017
  */
- public class PointTest {
+ public class TriangleTest {
    /*Testing max task.
    *
    */

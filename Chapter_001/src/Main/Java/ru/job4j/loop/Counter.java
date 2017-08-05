@@ -10,12 +10,14 @@ package ru.job4j.loop;
 *Class for Counter task.
 */
 public class Counter {
-  public int add(int start, int finish) {};
-  for (int start = 1 ; start <= 10; start++ ) {
-    if (start % 2 == 0) {
-      sum = sum + start;
+  public int add(int start, int finish) {
+  int sum = 0;
+  for (int i= start; i <= finish; i++ ) {
+    if (i % 2 == 0) {
+      sum = sum + i;
     }
   }
+  return sum;
 
 
   }
